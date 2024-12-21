@@ -18,3 +18,8 @@ All Images
 ````
 docker rmi -f $(docker images -q)
 ````
+### Preparing the Application for the Image
+````
+dotnet restore
+dotnet publish --framework net9.0 --configuration Release --output dist
+````
