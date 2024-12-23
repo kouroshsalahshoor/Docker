@@ -28,3 +28,7 @@ dotnet publish --framework net9.0 --configuration Release --output dist
 cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 ````
+### Checking That Docker Is Working
+````
+docker run --rm hello-world
+````
