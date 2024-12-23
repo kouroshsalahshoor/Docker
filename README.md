@@ -41,3 +41,5 @@ docker create -p 3000:80 --name mvcApp3000 kourosh/mvcapp
 ````
 docker ps -a
 ````
+### Starting a Container
+docker start mvcApp3000
