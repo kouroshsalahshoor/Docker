@@ -48,3 +48,11 @@ docker ps -a
 ````
 docker start mvcApp3000
 ````
+### Stopping a Container
+````
+docker stop <container id>
+````
+### Deleteing a Container
+````
+docker rm <container id>
+````
