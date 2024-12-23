@@ -33,4 +33,7 @@ dotnet publish --framework net9.0 --configuration Release --output dist
 cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 ````
-
+### Creating a Container
+````
+docker create -p 3000:80 --name mvcApp3000 kourosh/mvcapp
+````
