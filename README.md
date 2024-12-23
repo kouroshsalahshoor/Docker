@@ -30,7 +30,7 @@ dotnet publish --framework net9.0 --configuration Release --output dist
 ````
 ### Creating a Custom Image
 ````
-cd Docker\MvcApp\MvcApp
+cd Docker\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 ````
 
