@@ -6,11 +6,12 @@ https://hub.docker.com/
 ````
 docker run --rm hello-world
 ````
-
+### Listing Images
+````
+docker images
+````
 ### Downloading Images
 ````
-docker run --rm hello-world
-docker images
 docker pull alpine
 docker pull alpine:3.4
 ````
