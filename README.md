@@ -2,6 +2,11 @@
 
 https://hub.docker.com/
 
+### Checking That Docker Is Working
+````
+docker run --rm hello-world
+````
+
 ### Downloading Images
 ````
 docker run --rm hello-world
@@ -28,7 +33,4 @@ dotnet publish --framework net9.0 --configuration Release --output dist
 cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 ````
-### Checking That Docker Is Working
-````
-docker run --rm hello-world
-````
+
