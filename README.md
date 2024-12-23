@@ -8,6 +8,7 @@ make sure the docker desktop is running
 ````
 docker run hello-world
 docker run --rm hello-world
+docker run -p 80:80 hello-world
 ````
 ### Listing the Available Images
 ````
