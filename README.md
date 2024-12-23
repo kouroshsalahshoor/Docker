@@ -3,7 +3,9 @@
 https://hub.docker.com/
 
 ### Checking That Docker Is Working
+start the docker desktop
 ````
+docker run hello-world
 docker run --rm hello-world
 ````
 ### Listing the Available Images
