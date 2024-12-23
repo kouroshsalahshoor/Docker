@@ -37,3 +37,7 @@ docker build . -t kourosh/mvcapp -f Dockerfile
 ````
 docker create -p 3000:80 --name mvcApp3000 kourosh/mvcapp
 ````
+### Listing All Containers
+````
+docker ps -a
+````
