@@ -6,7 +6,7 @@ https://hub.docker.com/
 ````
 docker run --rm hello-world
 ````
-### Listing Images
+### Listing the Available Images
 ````
 docker images
 ````
@@ -15,12 +15,11 @@ docker images
 docker pull alpine
 docker pull alpine:3.4
 ````
-### Deleting Images
-by ID
+### Deleting Images by ID
 ````
 docker rmi -f <image id>
 ````
-All Images
+#### Deleting all All Images
 ````
 docker rmi -f $(docker images -q)
 ````
