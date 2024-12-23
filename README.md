@@ -3,7 +3,8 @@
 https://hub.docker.com/
 
 ### Checking That Docker Is Working
-start the docker desktop
+make sure the docker desktop is running
+#### running a container
 ````
 docker run hello-world
 docker run --rm hello-world
