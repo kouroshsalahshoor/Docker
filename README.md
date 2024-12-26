@@ -6,29 +6,23 @@
 ### Checking That Docker Is Working
 make sure the docker desktop is running
 
-### Listing Available Images
+# Images
 ````
+// Listing Available Images
 docker images
-````
-### Downloading Images
-````
+// Downloading Images
 docker pull alpine
 docker pull alpine:3.4
-````
-#### running a container
-````
+// running a container - pulls if not pulled
 docker run hello-world
 docker run --rm hello-world
 docker run -p 80:80 hello-world
-````
-### Deleting Images by ID
-````
+// Deleting Images by ID
 docker rmi -f <image id>
-````
-#### Deleting all All Images
-````
+// Deleting all All Images
 docker rmi -f $(docker images -q)
 ````
+
 ### Preparing the Application for the Image
 ````
 dotnet restore
