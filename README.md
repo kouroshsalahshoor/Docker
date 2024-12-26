@@ -59,6 +59,13 @@ cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 docker commit <container id> <new container name>
 ````
+# Ms Sql Server
+
+https://hub.docker.com/search?q=microsoft
+````
+docker pull mcr.microsoft.com/mssql/server
+````
+
 
 - https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-powershell
 - https://hub.docker.com/u/microsoft
