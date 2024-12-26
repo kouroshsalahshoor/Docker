@@ -1,8 +1,7 @@
 # Docker
 
-https://docker.com/
-
-https://hub.docker.com/
+- https://docker.com/
+- https://hub.docker.com/search?q=
 
 ### Checking That Docker Is Working
 make sure the docker desktop is running
