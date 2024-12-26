@@ -60,3 +60,9 @@ docker build . -t kourosh/mvcapp -f Dockerfile
 docker commit <container id> <new container name>
 ````
 
+https://www.sqlservercentral.com/articles/docker-desktop-on-windows-10-for-sql-server-step-by-step
+
+````
+docker pull docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+````
