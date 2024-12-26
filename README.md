@@ -5,13 +5,8 @@
 
 ### Checking That Docker Is Working
 make sure the docker desktop is running
-#### running a container
-````
-docker run hello-world
-docker run --rm hello-world
-docker run -p 80:80 hello-world
-````
-### Listing the Available Images
+
+### Listing Available Images
 ````
 docker images
 ````
@@ -19,6 +14,12 @@ docker images
 ````
 docker pull alpine
 docker pull alpine:3.4
+````
+#### running a container
+````
+docker run hello-world
+docker run --rm hello-world
+docker run -p 80:80 hello-world
 ````
 ### Deleting Images by ID
 ````
