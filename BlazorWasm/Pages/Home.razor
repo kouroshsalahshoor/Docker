@@ -1,0 +1,29 @@
+﻿@page "/"
+@inject HttpClient _httpClient
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button class="btn btn-primary" @onclick="get">Get</button>
+
+@if (_items is not null)
+{
+    <ul>
+        @foreach (var item in _items)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+@code{
+    private List<string>? _items;
+
+    private async Task get()
+    {
+        _items = await _httpClient.GetFromJsonAsync<List<string>>("");
+    }
+}
