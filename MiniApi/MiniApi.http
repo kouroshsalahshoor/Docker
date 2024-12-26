@@ -1,0 +1,10 @@
+@MiniApi_HostAddress = https://localhost:7250
+
+GET {{MiniApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{MiniApi_HostAddress}}/podcasts
+
+###

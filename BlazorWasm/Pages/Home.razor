@@ -24,6 +24,6 @@ Welcome to your new app.
 
     private async Task get()
     {
-        _items = await _httpClient.GetFromJsonAsync<List<string>>("");
+        _items = await _httpClient.GetFromJsonAsync<List<string>>("https://localhost:7250/podcasts");
     }
 }
