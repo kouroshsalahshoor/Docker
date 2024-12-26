@@ -5,10 +5,12 @@
 
 ````
 docker
-docker run nginx
+docker run -d -p 80:80 nginx
 //open another cmd
 docker ps -a
 docker stop <conainer id>
+docker rm -f <conainer id>
+docker logs <conainer id>
 ````
 
 # Images
