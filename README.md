@@ -2,17 +2,8 @@
 
 - https://docker.com/
 - https://hub.docker.com/search?q=
-````
-docker
-docker run -d -p 80:80 nginx
-docker ps -a
-docker stop <conainer id>
-docker rm -f <conainer id>
-docker logs <conainer id>
-docker attach <conainer id>
-docker exec -it <conainer id> bash|vim|ls|pwd|<command>
-````
-# Images
+
+# Image
 ````
 // Listing Available Images
 docker images
@@ -23,14 +14,27 @@ docker pull alpine:3.4
 docker rmi -f <image id>
 // Deleting all All Images
 docker rmi -f $(docker images -q)
+// Tag
+docker tag <image id> <image name>:<tag name>
+//untag
+docker rmi <image name>:<tag name>
 ````
 # Container
 ````
+// installation test
+// running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
+docker run hello-world
+docker run -d -p 80:80 nginx
+docker ps -a
+docker stop <conainer id>
+docker rm -f <conainer id>
+docker logs <conainer id>
+docker attach <conainer id>
+docker exec -it <conainer id> bash|vim|ls|pwd|<command>
 // Listing All Containers
 docker ps
 docker ps -a
-// running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
-docker run hello-world
+
 docker run --rm hello-world
 docker run -p 80:80 hello-world
 // Starting a Container
