@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using MiniApi.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Services.AddCors();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
 
@@ -18,16 +27,22 @@ app.UseHttpsRedirection();
 
 app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
-app.MapGet("/podcasts", () =>
+app.MapGet("/podcasts", async (ApplicationDbContext _db) =>
 {
-    var items = new List<string>();
-    for (int i = 1; i <= 10; i++)
-    {
-        items.Add($"Podcast {i.ToString()}");
-    }
-    return items;
+    return await _db.Podcasts.ToListAsync();
 })
 .WithName("podcasts");
+
+//app.MapGet("/podcasts", () =>
+//{
+//    var items = new List<string>();
+//    for (int i = 1; i <= 10; i++)
+//    {
+//        items.Add($"Podcast {i.ToString()}");
+//    }
+//    return items;
+//})
+//.WithName("podcasts");
 
 var summaries = new[]
 {
