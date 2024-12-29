@@ -29,7 +29,7 @@ app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.MapGet("/podcasts", async (ApplicationDbContext _db) =>
 {
-    return await _db.Podcasts.ToListAsync();
+    return await _db.Podcasts.Select(x=> x.Title).ToListAsync();
 })
 .WithName("podcasts");
 
