@@ -69,6 +69,8 @@ https://hub.docker.com/search?q=microsoft
 ````
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ````
+### run
+https://dev.to/docker/how-to-run-microsoft-sql-in-minutes-using-docker-desktop-3h7d
 
 
 - https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-powershell
