@@ -14,6 +14,11 @@ https://dev.to/docker/how-to-run-microsoft-sql-in-minutes-using-docker-desktop-3
 
 https://www.bing.com/videos/riverview/relatedvideo?q=how+to+run+sqlserver+on+docker+on+windows&mid=89284776A93E02A30EEB89284776A93E02A30EEB&mmscn=serpvidol&mcid=738E4EBAF2804B59BC7F6E19F010150C&FORM=VIRE&ajaxhist=0&ajaxserp=0
 
+---
+## add docker to a project
+- right click on the project
+- Add
+- Docker support
 
 # Image
 ````
