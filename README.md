@@ -19,8 +19,9 @@ https://www.bing.com/videos/riverview/relatedvideo?q=how+to+run+sqlserver+on+doc
 - right click on the project
 - Add
 - Docker support
+### generate an image based on dockerfile
 ````
-docker build
+Docker\MiniApi> docker build -t api .
 ````
 # Image
 ````
