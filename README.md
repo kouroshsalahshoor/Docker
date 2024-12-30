@@ -1,7 +1,19 @@
 # Docker
-
 - https://docker.com/
 - https://hub.docker.com/search?q=
+
+# Ms Sql Server
+
+https://hub.docker.com/r/microsoft/mssql-server
+
+````
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+````
+### run
+https://dev.to/docker/how-to-run-microsoft-sql-in-minutes-using-docker-desktop-3h7d
+
+https://www.bing.com/videos/riverview/relatedvideo?q=how+to+run+sqlserver+on+docker+on+windows&mid=89284776A93E02A30EEB89284776A93E02A30EEB&mmscn=serpvidol&mcid=738E4EBAF2804B59BC7F6E19F010150C&FORM=VIRE&ajaxhist=0&ajaxserp=0
+
 
 # Image
 ````
@@ -63,16 +75,7 @@ cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 docker commit <container id> <new container name>
 ````
-# Ms Sql Server
 
-https://hub.docker.com/search?q=microsoft
-````
-docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
-````
-### run
-https://dev.to/docker/how-to-run-microsoft-sql-in-minutes-using-docker-desktop-3h7d
-
-https://www.bing.com/videos/riverview/relatedvideo?q=how+to+run+sqlserver+on+docker+on+windows&mid=89284776A93E02A30EEB89284776A93E02A30EEB&mmscn=serpvidol&mcid=738E4EBAF2804B59BC7F6E19F010150C&FORM=VIRE&ajaxhist=0&ajaxserp=0
 
 ---
 
