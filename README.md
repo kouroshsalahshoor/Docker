@@ -43,27 +43,32 @@ docker run hello-world
 ````
 running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
 
-## Image
+---
+
+# Images
+## Docker Hub
 
 https://hub.docker.com/search?q=
 
-````
-// Listing Available Images
+### Listing Available Images
 docker images
-// Downloading Images
+### Downloading Images
 docker pull nginx
 docker pull alpine:3.4
-// Deleting Images by ID
+### Deleting Images by ID
 docker rmi -f <image id>
-// Deleting all All Images
+### Deleting all All Images
 docker rmi -f $(docker images -q)
-// Tag
+### Tag
 docker tag <image id> <image name>:<tag name>
-//untag
+### untagging
 docker rmi <image name>:<tag name>
-````
-## Container
-````
+
+---
+
+# Containers
+instance of an image
+
 docker run -d -p 80:80 nginx
 docker ps -a
 docker stop <conainer id>
@@ -71,39 +76,39 @@ docker rm -f <conainer id>
 docker logs <conainer id>
 docker attach <conainer id>
 docker exec -it <conainer id> bash|vim|ls|pwd|<command>
-// Listing All Containers
+### Listing All Containers
 docker ps
 docker ps -a
 
 docker run --rm hello-world
 docker run -p 80:80 hello-world
-// Starting a Container
+### Starting a Container
 docker start hello-world
-// Stopping a Container
+### Stopping a Container
 docker stop <container id>
-// Deleteing a Container
+### Deleteing a Container
 docker rm <container id>
-// Creating a Container
+### Creating a Container
 docker create -p 3000:80 --name mvcApp3000 kourosh/mvcapp
-````
-### Creating a Custom Image from a container
+
+## Creating a Custom Image from a container
 ````
 docker commit <container id> <new container name>
 ````
 
-### Preparing the Application for the Image
+## Preparing the Application for the Image
 ````
 dotnet restore
 dotnet publish --framework net9.0 --configuration Release --output dist
 ````
-### Creating a Custom Image
+## Creating a Custom Image
 ````
 cd Docker\MvcApp\MvcApp
 docker build . -t kourosh/mvcapp -f Dockerfile
 docker commit <container id> <new container name>
 ````
 
-##
+# links
 - https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-powershell
 - https://hub.docker.com/u/microsoft
 - https://medium.com/@seventechnologiescloud/local-sqlserver-database-via-docker-compose-the-ultimate-guide-f1d9f0ac1354
