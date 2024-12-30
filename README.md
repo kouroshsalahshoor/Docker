@@ -2,7 +2,7 @@
 - https://docker.com/
 - https://hub.docker.com/search?q=
 
-# Ms Sql Server
+## Ms Sql Server
 
 https://hub.docker.com/r/microsoft/mssql-server
 
@@ -27,11 +27,11 @@ Docker\MiniApi> docker build -t miniapi .
 ````
 docker run -p 1234:80 miniapi
 ````
-# dockerizing Wasm
+## dockerizing Wasm
 
 https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-webassembly-app/
 
-# Image
+## Image
 ````
 // Listing Available Images
 docker images
@@ -47,7 +47,7 @@ docker tag <image id> <image name>:<tag name>
 //untag
 docker rmi <image name>:<tag name>
 ````
-# Container
+## Container
 ````
 // installation test
 // running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
@@ -79,7 +79,6 @@ docker create -p 3000:80 --name mvcApp3000 kourosh/mvcapp
 docker commit <container id> <new container name>
 ````
 
-# 
 ### Preparing the Application for the Image
 ````
 dotnet restore
@@ -92,9 +91,7 @@ docker build . -t kourosh/mvcapp -f Dockerfile
 docker commit <container id> <new container name>
 ````
 
-
----
-
+##
 - https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-powershell
 - https://hub.docker.com/u/microsoft
 - https://medium.com/@seventechnologiescloud/local-sqlserver-database-via-docker-compose-the-ultimate-guide-f1d9f0ac1354
