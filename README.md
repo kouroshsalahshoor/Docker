@@ -1,6 +1,4 @@
 # Docker
-- https://docker.com/
-- https://hub.docker.com/search?q=
 
 ## Ms Sql Server
 
@@ -31,7 +29,24 @@ docker run -p 1234:80 miniapi
 
 https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-webassembly-app/
 
+---
+# Installing Docker on Windows
+## Docker desktop
+
+https://docker.com/
+
+hardware virtualization must be on
+
+### installation test
+````
+docker run hello-world
+````
+running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
+
 ## Image
+
+https://hub.docker.com/search?q=
+
 ````
 // Listing Available Images
 docker images
@@ -49,9 +64,6 @@ docker rmi <image name>:<tag name>
 ````
 ## Container
 ````
-// installation test
-// running a container - pulls if not pulled - to test the installation - make sure the docker desktop is running
-docker run hello-world
 docker run -d -p 80:80 nginx
 docker ps -a
 docker stop <conainer id>
