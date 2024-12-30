@@ -51,19 +51,30 @@ running a container - pulls if not pulled - to test the installation - make sure
 https://hub.docker.com/search?q=
 
 ### Listing Available Images
+````
 docker images
+````
 ### Downloading Images
+````
 docker pull nginx
 docker pull alpine:3.4
+````
 ### Deleting Images by ID
+````
 docker rmi -f <image id>
+````
 ### Deleting all All Images
+````
 docker rmi -f $(docker images -q)
+````
 ### Tag
+````
 docker tag <image id> <image name>:<tag name>
+````
 ### untagging
+````
 docker rmi <image name>:<tag name>
-
+````
 ---
 
 # Containers
