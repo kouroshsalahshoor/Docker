@@ -19,7 +19,9 @@ https://www.bing.com/videos/riverview/relatedvideo?q=how+to+run+sqlserver+on+doc
 - right click on the project
 - Add
 - Docker support
-
+````
+docker build
+````
 # Image
 ````
 // Listing Available Images
