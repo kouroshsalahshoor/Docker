@@ -27,6 +27,10 @@ Docker\MiniApi> docker build -t miniapi .
 ````
 docker run -p 1234:80 miniapi
 ````
+# dockerizing Wasm
+
+https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-webassembly-app/
+
 # Image
 ````
 // Listing Available Images
