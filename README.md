@@ -79,14 +79,27 @@ docker rmi <image name>:<tag name>
 
 # Containers
 instance of an image
+
 ````
 docker run nginx
 docker run -d -p 80:80 nginx
+````
+````
 docker ps -a
+````
+````
 docker stop <conainer id>
+````
+````
 docker rm -f <conainer id>
+````
+````
 docker logs <conainer id>
+````
+````
 docker attach <conainer id>
+````
+````
 docker exec -it <conainer id> bash|vim|ls|pwd|<command>
 ````
 ### Listing All Containers
