@@ -139,6 +139,8 @@ https://hub.docker.com/r/microsoft/dotnet
 
 # links
 - https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows
+- https://learn.microsoft.com/en-gb/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-9.0
+- 
 - https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-powershell
 - https://hub.docker.com/u/microsoft
 - https://medium.com/@seventechnologiescloud/local-sqlserver-database-via-docker-compose-the-ultimate-guide-f1d9f0ac1354
