@@ -137,6 +137,9 @@ docker commit <container id> <new container name>
 ## .Net image names
 https://hub.docker.com/r/microsoft/dotnet
 
+# Yaml Tutorial
+https://www.youtube.com/watch?v=1uFVr15xDGg
+
 # links
 - https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows
 - https://learn.microsoft.com/en-gb/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-9.0
